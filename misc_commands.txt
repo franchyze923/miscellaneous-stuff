@@ -1,0 +1,1 @@
+yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -i -v --download-archive "./archive.txt" "url here"
