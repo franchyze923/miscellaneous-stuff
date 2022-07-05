@@ -1,1 +1,4 @@
 yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -i -v --download-archive "./archive.txt" "url here"
+
+yt-dlp -f 'bv*[height=1080]+ba' --download-archive videos.txt https://www.youtube.com/user/franchyze923 videos -o '%(channel)s/%(title)s.%(ext)s' --format mp4
+this downloads a whole channel to mp4
