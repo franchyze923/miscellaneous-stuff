@@ -1,5 +1,7 @@
 [ubuntu]
+#192.168.0.220
+192.168.0.230
 
-192.168.0.167
-192.168.0.176
-192.168.0.188
+#ansible-playbook ./playbooks/apt.yml -i ./inventory/hosts
+
+

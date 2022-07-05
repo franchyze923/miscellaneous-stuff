@@ -1,0 +1,5 @@
+commands
+
+cd to ansible dir - ansible-playbook ./playbooks/build_docker_box.yml --user fran -i ./inventory/hosts
+
+cd to terraform dir - terraform apply

@@ -1,0 +1,19 @@
+version: "3.4"
+services:
+  jackett:
+    image: lscr.io/linuxserver/jackett:latest
+    network_mode: "bridge"
+    container_name: jackett
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=US/Pacific
+      - AUTO_UPDATE=true #optional
+      - RUN_OPTS=<run options here> #optional
+    volumes:
+      - /home/fran/jackett/config:/config
+      - /home/fran/jackett/downloads:/downloads
+      - /mnt/FranArchives/Media:/FranArchives/Media
+    ports:
+      - 9117:9117
+    restart: always

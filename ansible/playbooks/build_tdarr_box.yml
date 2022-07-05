@@ -1,0 +1,50 @@
+- hosts: "*"
+  become: yes
+  roles:
+    - geerlingguy.docker
+  tasks:
+    - name: apt
+      apt:
+        update_cache: yes
+        upgrade: 'yes'
+
+    - name: Creates directory
+      file:
+        path: "{{ item }}"
+        state: directory
+        recurse: yes
+
+      with_items:
+      - /home/fran/tdarr/config
+
+    - name: install cifs-utils
+      ansible.builtin.package:
+        name: cifs-utils
+        state: present    
+
+    - name: install linux-generic
+      apt: 
+        name: linux-generic
+        state: latest
+        update_cache: yes
+
+    - name: mount FranArchives
+      mount:
+        state: "mounted"
+        fstype: "cifs"
+        name: "/mnt/FranArchives"
+        src: "//xxx.xxx.x.x/FranArchives"
+        opts: "username=xxx,password=xxxx,iocharset=utf8,file_mode=0777,dir_mode=0777"
+ 
+
+    - name: copy docker-compose files
+      copy: src={{ item.src }} dest={{ item.dest }}
+      with_items:
+         - { src: "{{ playbook_dir }}/docker-compose/docker-compose-tdarr.yml", dest: '/home/fran/tdarr/docker-compose.yml' }
+         - { src: "{{ playbook_dir }}/update_tdarr_container.sh", dest: '/home/fran/update_tdarr_container.sh'  }  
+
+    - name: Changing perm of "update_tdarr_container.sh", adding "+x"
+      file: dest=/home/fran/update_tdarr_container.sh mode=a+x      
+
+    - name: Execute update_tdarr_container.sh
+      command: sh /home/fran/update_tdarr_container.sh

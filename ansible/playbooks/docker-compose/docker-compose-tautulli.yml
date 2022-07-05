@@ -1,0 +1,16 @@
+version: "3.4"
+services:
+  tautulli:
+    image: lscr.io/linuxserver/tautulli:latest
+    network_mode: "bridge"
+    container_name: tautulli
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=US/Pacific
+    volumes:
+      - /home/fran/tautulli/config:/config
+      - /mnt/FranArchives/Media:/FranArchives/Media
+    ports:
+      - 8181:8181
+    restart: always

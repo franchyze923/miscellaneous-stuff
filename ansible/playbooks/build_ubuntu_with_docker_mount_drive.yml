@@ -1,0 +1,38 @@
+- hosts: "*"
+  become: yes
+  roles:
+    - geerlingguy.docker
+  tasks:
+    - name: apt
+      apt:
+        update_cache: yes
+        upgrade: 'yes'
+
+    - name: Creates directory
+      file:
+        path: "{{ item }}"
+        state: directory
+        recurse: yes
+
+      with_items:
+      - /home/fran/tdarr/config
+
+    - name: install cifs-utils
+      ansible.builtin.package:
+        name: cifs-utils
+        state: present    
+
+    - name: install linux-generic
+      apt: 
+        name: linux-generic
+        state: latest
+        update_cache: yes
+
+    - name: mount FranArchives
+      mount:
+        state: "mounted"
+        fstype: "cifs"
+        name: "/mnt/FranArchives"
+        src: "//xxx.xx.x.x/FranArchives"
+        opts: "username=xxx,password=xxx,iocharset=utf8,file_mode=0777,dir_mode=0777"
+ 

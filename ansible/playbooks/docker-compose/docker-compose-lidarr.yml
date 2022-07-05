@@ -1,0 +1,17 @@
+version: "3.4"
+services:
+  lidarr:
+    image: lscr.io/linuxserver/lidarr:latest
+    network_mode: "bridge"
+    container_name: lidarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=US/Pacific
+    volumes:
+      - /home/fran/lidarr/config:/config
+      - /home/fran/lidarr/downloads:/downloads
+      - /mnt/FranArchives/Media:/FranArchives/Media/
+    ports:
+      - 8686:8686
+    restart: always

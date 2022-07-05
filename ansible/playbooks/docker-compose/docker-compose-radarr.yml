@@ -1,0 +1,17 @@
+version: "3.4"
+services:
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    network_mode: "bridge"
+    container_name: radarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=US/Pacific
+    volumes:
+      - /home/fran/radarr/config:/config
+      - /home/fran/downloadclient-downloads:/downloadclient-downloads #optional
+      - /mnt/FranArchives/Media:/FranArchives/Media/
+    ports:
+      - 7878:7878
+    restart: always

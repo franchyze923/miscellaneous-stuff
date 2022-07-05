@@ -1,0 +1,73 @@
+- hosts: "*"
+  become: yes
+  roles:
+    - geerlingguy.docker
+  tasks:
+    - name: apt
+      apt:
+        update_cache: yes
+        upgrade: 'yes'
+
+    - name: Creates directory
+      file:
+        path: "{{ item }}"
+        state: directory
+        recurse: yes
+
+      with_items:
+      - /home/fran/plex/config
+      - /home/fran/tautulli/config
+      - /home/fran/sonarr/config
+      - /home/fran/sabnzbd/config
+      - /home/fran/radarr/config
+      - /home/fran/lidarr/config
+      - /home/fran/jellyfin/config
+      - /home/fran/jackett/config
+      - /home/fran/heimdall/config
+      - /home/fran/portainer/config
+      - /home/fran/wireguard/config   
+      - /home/fran/wireguard/lib/modules         
+
+    - name: install cifs-utils
+      ansible.builtin.package:
+        name: cifs-utils
+        state: present    
+
+    - name: install linux-generic
+      apt: 
+        name: linux-generic
+        state: latest
+        update_cache: yes
+
+    - name: mount FranArchives
+      mount:
+        state: "mounted"
+        fstype: "cifs"
+        name: "/mnt/FranArchives"
+        src: "//xxx.xxx.x.x/FranArchives"
+        opts: "username=xxx,password=xxxxx,iocharset=utf8,file_mode=0777,dir_mode=0777"
+ 
+
+    - name: copy docker-compose files
+      copy: src={{ item.src }} dest={{ item.dest }}
+      with_items:
+         - { src: "{{ playbook_dir }}/docker-compose/docker-compose-heimdall.yml", dest: '/home/fran/heimdall/docker-compose.yml' }
+         - { src: "{{ playbook_dir }}/docker-compose/docker-compose-jackett.yml", dest: '/home/fran/jackett/docker-compose.yml' }
+         - { src: "{{ playbook_dir }}/docker-compose/docker-compose-jellyfin.yml", dest: '/home/fran/jellyfin/docker-compose.yml' }
+         - { src: "{{ playbook_dir }}/docker-compose/docker-compose-radarr.yml", dest: '/home/fran/radarr/docker-compose.yml' }
+         - { src: "{{ playbook_dir }}/docker-compose/docker-compose-plex.yml", dest: '/home/fran/plex/docker-compose.yml' }
+         - { src: "{{ playbook_dir }}/docker-compose/docker-compose-sabnzbd.yml", dest: '/home/fran/sabnzbd/docker-compose.yml' }
+         - { src: "{{ playbook_dir }}/docker-compose/docker-compose-tautulli.yml", dest: '/home/fran/tautulli/docker-compose.yml' }
+         - { src: "{{ playbook_dir }}/docker-compose/docker-compose-radarr.yml", dest: '/home/fran/radarr/docker-compose.yml' }
+         - { src: "{{ playbook_dir }}/docker-compose/docker-compose-lidarr.yml", dest: '/home/fran/lidarr/docker-compose.yml' }
+         - { src: "{{ playbook_dir }}/docker-compose/docker-compose-sonarr.yml", dest: '/home/fran/sonarr/docker-compose.yml' }
+         - { src: "{{ playbook_dir }}/docker-compose/docker-compose-wireguard.yml", dest: '/home/fran/wireguard/docker-compose.yml' }
+         - { src: "{{ playbook_dir }}/docker-compose/docker-compose-portainer.yml", dest: '/home/fran/portainer/docker-compose.yml' }
+         - { src: "{{ playbook_dir }}/update_docker_containers.sh", dest: '/home/fran/update_docker_containers.sh'  }  
+        #  - { src: "{{ playbook_dir }}/docker-compose/docker-compose-tdarr.yml", dest: '/home/fran/tdarr/docker-compose.yml' }
+
+    - name: Changing perm of "update_docker_containers.sh", adding "+x"
+      file: dest=/home/fran/update_docker_containers.sh mode=a+x      
+
+    - name: Execute update_docker_containers.sh
+      command: sh /home/fran/update_docker_containers.sh  

@@ -1,0 +1,16 @@
+# docker-compose.yml 
+version: '3.4'
+
+services:
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    restart: always
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./portainer-data:/data
+    ports:
+      - 8000:8000 
+      - 9443:9443

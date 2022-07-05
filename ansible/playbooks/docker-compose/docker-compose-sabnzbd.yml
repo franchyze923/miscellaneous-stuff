@@ -1,0 +1,18 @@
+version: "3.4"
+services:
+  sabnzbd:
+    image: lscr.io/linuxserver/sabnzbd:latest
+    network_mode: "bridge"
+    container_name: sabnzbd
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=US/Pacific
+    volumes:
+      - /home/fran/sabnzbd/data:/config
+      - /home/fran/sabnzbd/downloads:/downloads #optional
+      - /home/fran/sabnzbd/incomplete-downloads:/incomplete-downloads #optional
+      - /mnt/FranArchives/Media:/FranArchives/Media
+    ports:
+      - 8080:8080
+    restart: always
