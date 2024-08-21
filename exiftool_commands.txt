@@ -8,3 +8,12 @@ exiftool "-filemodifydate<createdate" "-filecreatedate<createdate" "Y:\Fran's Ph
 or both at the same time
 
 exiftool "-filemodifydate<datetimeoriginal" "-filecreatedate<datetimeoriginal" "-filemodifydate<createdate" "-filecreatedate<createdate" "Y:\Fran's Photos\2019"
+
+manually update date  
+exiftool "-CreateDate=2014:01:01 00:00:00" "Y:\Fran's Photos\2014\iPhone pics\06_xx_14\IMG_0495.JPG"
+
+>exiftool "-CreateDate=2014:01:01 00:00:00" -overwrite_original "Y:\Fran's Photos\2014\iPhone pics\06_xx_14\here"
+
+exiftool "-CreateDate=2014:01:01 00:00:00" -overwrite_original "Y:\Fran's Photos\2014\Hiking Trip_2014"
+
+exiftool "-filemodifydate<datetimeoriginal" "-filecreatedate<datetimeoriginal" "-filemodifydate<createdate" "-filecreatedate<createdate" "Y:\Fran's Photos\2014\Hiking Trip_2014" -r
