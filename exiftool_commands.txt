@@ -1,0 +1,10 @@
+Update date fields with original date value from exif metadata
+exiftool "-filemodifydate<datetimeoriginal" "-filecreatedate<datetimeoriginal" "Y:\Fran's Photos\2019"
+
+Update video .MOV files metadata
+
+exiftool "-filemodifydate<createdate" "-filecreatedate<createdate" "Y:\Fran's Photos\2019"
+
+or both at the same time
+
+exiftool "-filemodifydate<datetimeoriginal" "-filecreatedate<datetimeoriginal" "-filemodifydate<createdate" "-filecreatedate<createdate" "Y:\Fran's Photos\2019"
