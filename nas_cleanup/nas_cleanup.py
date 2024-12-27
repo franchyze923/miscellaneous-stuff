@@ -36,10 +36,10 @@ def get_all_dirs_ftp(folder=""):
     return dirs
 
 
-front_cam = 'Front Cam/2023/'
-back_cam = 'Back Cam/2023/'
+front_cam = 'Front Cam/2024/'
+indoor_cam = 'Indoor Cam/2024/'
 
-big_list = [get_all_dirs_ftp(front_cam), get_all_dirs_ftp(back_cam)]
+big_list = [get_all_dirs_ftp(front_cam), get_all_dirs_ftp(indoor_cam)]
 
 for cam in big_list:
 
