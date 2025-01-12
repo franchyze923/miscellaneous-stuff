@@ -36,8 +36,8 @@ def get_all_dirs_ftp(folder=""):
     return dirs
 
 
-front_cam = 'Front Cam/2024/'
-indoor_cam = 'Indoor Cam/2024/'
+front_cam = 'Front Cam/2025'
+indoor_cam = 'Indoor Cam/2025'
 
 big_list = [get_all_dirs_ftp(front_cam), get_all_dirs_ftp(indoor_cam)]
 
@@ -57,7 +57,9 @@ for cam in big_list:
 
                 if file_date < datetime.datetime.now() - datetime.timedelta(days=8):
                     print(f"{file[0]} is older than 8 days.. Deleting...")
-                    full_file_path = os.path.join(x, name)
+                    ## added replace below for windows path 2025
+                    full_file_path = os.path.join(x, name).replace("\\","/")
+                    #full_file_path = os.path.join(x, name)
                     ftp.delete(full_file_path)
                     del_count +=1
                 total_count += 1
