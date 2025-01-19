@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Progress Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Aligns content to the top */
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            margin-top: 20px; /* Adds space at the top */
+            margin-bottom: 10px; /* Reduces space below the title */
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .progress-container {
+            width: 80%;
+            max-width: 500px;
+            height: 30px;
+            background-color: #e0e0e0;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background-color: #4caf50;
+            border-radius: 15px;
+            animation: progress 5s infinite;
+        }
+
+        @keyframes progress {
+            0% {
+                width: 0%;
+            }
+            50% {
+                width: 50%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My App 2.0</h1>
+
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+
+</body>
+</html>
