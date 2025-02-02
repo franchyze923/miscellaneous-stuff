@@ -1,0 +1,565 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -100.54600227702267,
+                    46.011579835426225
+                ]
+            },
+            "properties": {
+                "name": "Bad 1",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -101.19347574961719,
+                    48.880307516759714
+                ]
+            },
+            "properties": {
+                "name": "Bad 2",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -100.01167554181609,
+                    46.668947427454285
+                ]
+            },
+            "properties": {
+                "name": "Bad 3",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.45418158143535,
+                    47.650614009659144
+                ]
+            },
+            "properties": {
+                "name": "Bad 4",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -100.08247080231502,
+                    47.279642811190165
+                ]
+            },
+            "properties": {
+                "name": "Bad 5",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -98.28775593494737,
+                    48.8856110211571
+                ]
+            },
+            "properties": {
+                "name": "Bad 6",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -103.63729700990915,
+                    46.48915419993083
+                ]
+            },
+            "properties": {
+                "name": "Bad 7",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.89934267728916,
+                    47.82640857832228
+                ]
+            },
+            "properties": {
+                "name": "Bad 8",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -101.51141942115143,
+                    48.85821476083852
+                ]
+            },
+            "properties": {
+                "name": "Bad 9",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -103.47119943627948,
+                    47.82008952440941
+                ]
+            },
+            "properties": {
+                "name": "Bad 10",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -98.41421619187591,
+                    47.38816448198974
+                ]
+            },
+            "properties": {
+                "name": "Bad 11",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.6514209650531,
+                    48.54549671500995
+                ]
+            },
+            "properties": {
+                "name": "Bad 12",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -98.6862018473779,
+                    48.21253582762206
+                ]
+            },
+            "properties": {
+                "name": "Bad 13",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -101.70845533788521,
+                    47.540113091326134
+                ]
+            },
+            "properties": {
+                "name": "Bad 14",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -101.76245577930328,
+                    47.76559994932021
+                ]
+            },
+            "properties": {
+                "name": "Bad 15",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.34633091653195,
+                    47.14940120157057
+                ]
+            },
+            "properties": {
+                "name": "Bad 16",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.16198191046956,
+                    48.79234312338305
+                ]
+            },
+            "properties": {
+                "name": "Bad 17",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -101.14075012556863,
+                    47.6957170083942
+                ]
+            },
+            "properties": {
+                "name": "Bad 18",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -102.66006157293819,
+                    47.4597158875337
+                ]
+            },
+            "properties": {
+                "name": "Bad 19",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -100.44862836021284,
+                    46.127870904089775
+                ]
+            },
+            "properties": {
+                "name": "Bad 20",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -101.83507136970029,
+                    48.28410814315374
+                ]
+            },
+            "properties": {
+                "name": "Bad 21",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -103.23298967985929,
+                    46.88808259509764
+                ]
+            },
+            "properties": {
+                "name": "Bad 22",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -96.77545413460484,
+                    47.78866302324205
+                ]
+            },
+            "properties": {
+                "name": "Bad 23",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -98.29117913689586,
+                    48.4275736227657
+                ]
+            },
+            "properties": {
+                "name": "Bad 24",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -98.13617139437406,
+                    46.58634206194898
+                ]
+            },
+            "properties": {
+                "name": "Bad 25",
+                "type": "car"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -101.47197522428512,
+                    46.56714746830739
+                ]
+            },
+            "properties": {
+                "name": "Bad 26",
+                "type": "jeep"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.83146528452448,
+                    46.384401782557745
+                ]
+            },
+            "properties": {
+                "name": "Bad 27",
+                "type": "jeep"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -101.89411092138477,
+                    46.6112081156075
+                ]
+            },
+            "properties": {
+                "name": "Bad 28",
+                "type": "jeep"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -98.42804991169432,
+                    47.41275883931173
+                ]
+            },
+            "properties": {
+                "name": "Bad 29",
+                "type": "jeep"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.31643877078737,
+                    46.48677032213721
+                ]
+            },
+            "properties": {
+                "name": "Bad 30",
+                "type": "jeep"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -101.81209064681201,
+                    45.986390022333715
+                ]
+            },
+            "properties": {
+                "name": "Bad 31",
+                "type": "jeep"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.48052358443765,
+                    48.033305308672844
+                ]
+            },
+            "properties": {
+                "name": "Bad 32",
+                "type": "jeep"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -103.49494155156157,
+                    46.6865226979834
+                ]
+            },
+            "properties": {
+                "name": "Bad 33",
+                "type": "bike"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -103.4024991439274,
+                    47.54425371982234
+                ]
+            },
+            "properties": {
+                "name": "Bad 34",
+                "type": "bike"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.25269788934949,
+                    47.60749453482265
+                ]
+            },
+            "properties": {
+                "name": "Bad 35",
+                "type": "boat"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -102.34834718511281,
+                    46.52653890975776
+                ]
+            },
+            "properties": {
+                "name": "Bad 36",
+                "type": "boat"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.69314788496325,
+                    47.69278131022499
+                ]
+            },
+            "properties": {
+                "name": "Bad 37",
+                "type": "boat"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.61823517221173,
+                    47.77376403035374
+                ]
+            },
+            "properties": {
+                "name": "Bad 38",
+                "type": "motorcycle"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -102.82193882946036,
+                    47.39282026638865
+                ]
+            },
+            "properties": {
+                "name": "Bad 39",
+                "type": "motorcycle"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.34360370563681,
+                    48.64235072196945
+                ]
+            },
+            "properties": {
+                "name": "Bad 40",
+                "type": "motorcycle"
+            }
+        }
+    ]
+}

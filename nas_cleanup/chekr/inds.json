@@ -1,0 +1,11 @@
+{
+    "0": {"type": "car", "op": ">=", "amount": 25},
+    "1": {"type": "jeep", "op": ">=", "amount": 8},
+    "2": {"type": "bike", "op": ">=", "amount": 2},
+    "3": {"type": "boat", "op": ">", "amount": 1},
+    "4": {"type": "motorcycle", "op": ">", "amount": 2},
+    "5": {"type": "bicycle", "op": ">=", "amount": 3},
+    "6": {"type": "bus", "op": ">=", "amount": 3},
+    "7": {"type": "truck", "op": ">=", "amount": 1},
+    "8": {"type": "train", "op": ">=", "amount": 9}
+}
